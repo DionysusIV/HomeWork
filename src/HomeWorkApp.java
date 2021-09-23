@@ -22,7 +22,7 @@ public class HomeWorkApp {
         }
     }
     public static void printColor(){
-        int value = 188;
+        int value = 88;
         if (value <= 0) {
             System.out.println("Красный");
         }if (value > 0 && value <= 100 ){

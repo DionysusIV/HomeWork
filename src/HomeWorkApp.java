@@ -1,43 +1,53 @@
 public class HomeWorkApp {
 
     public static void main(String[] args) {
-        printThreeWords();
-        checkSumSign();
-        printColor();
-        compareNumbers();
-        }
-    public static void printThreeWords() {
-        System.out.println("Orange");
-        System.out.println("Banana");
-        System.out.println("Apple");
+        checkSum(5, 1);
+        number(-8);
+        meaning(16);
+        word("Hello", 5);
+        leapYear(2000);
     }
-    public static void checkSumSign(){
-        int a = 5;
-        int b = 15;
+
+    public static boolean checkSum(int a, int b) {
         int sum = a + b;
-        if (sum >= 0) {
-            System.out.println("Сумма положительная");
-        }else{
-            System.out.println("Сумма отрицательная");
+        if (sum > 10 && sum <= 20) {
+            return true;
+        } else {
+            return false;
         }
     }
-    public static void printColor(){
-        int value = 88;
-        if (value <= 0) {
-            System.out.println("Красный");
-        }if (value > 0 && value <= 100 ){
-            System.out.println("Желтый");
-        }if (value > 100){
-            System.out.println("Зеленый");
+
+    public static void number(int a) {
+        if (a >= 0) {
+            System.out.println("positive");
+        } else {
+            System.out.println("negative");
         }
     }
-    public static void compareNumbers(){
-        int a = 20;
-        int b = 10;
-        if (a >= b){
-            System.out.println("a >= b");
-        }else{
-            System.out.println("a < b");
+
+    public static boolean meaning(int c) {
+        if (c < 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public static void word(String x, int y) {
+        for (int i = 0; i < y; i++) {
+            System.out.println(x);
+        }
+    }
+
+    public static boolean leapYear(int x) {
+        if (x % 4 == 0) {
+            return true;
+        } else if (x % 100 == 0) {
+            return false;
+        } else if (x % 400 == 0) {
+            return true;
+        } else {
+            return false;
         }
     }
 }

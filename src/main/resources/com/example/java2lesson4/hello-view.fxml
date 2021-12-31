@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.2" fx:controller="com.example.java2lesson4.HelloController">
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+    </padding>
+    <TextArea fx:id="mainTextArea" VBox.vgrow="ALWAYS" />
+    <HBox>
+    <TextField fx:id="text"  onAction="#winOneClickAction" HBox.hgrow="ALWAYS" />
+        <Button onAction="#btnOneClickAction" text="Отправить" />
+      <opaqueInsets>
+         <Insets top="20.0" />
+      </opaqueInsets>
+      <VBox.margin>
+         <Insets top="10.0" />
+      </VBox.margin>
+    </HBox>
+</VBox>

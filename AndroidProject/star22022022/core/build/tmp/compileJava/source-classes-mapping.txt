@@ -1,0 +1,11 @@
+com/star/app/ScreenManager.java
+ com.star.app.ScreenManager
+com/star/app/Hero.java
+ com.star.app.Hero
+com/star/app/Background.java
+ com.star.app.Background
+ com.star.app.Background$Star
+com/star/app/Asteroid.java
+ com.star.app.Asteroid
+com/star/app/StarGame.java
+ com.star.app.StarGame
